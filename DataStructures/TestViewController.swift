@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TestViewController.swift
 //  DataStructures
 //
 //  Created by Ivan Denezhkin on 08.08.2018.
@@ -8,10 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let operationOne = Operation()
+        let operationTwo = Operation()
+        var stack = Stack<Operation>()
+        stack.push(element: operationOne)
+        stack.push(element: operationTwo)
+        print(stack.count)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
