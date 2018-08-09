@@ -19,14 +19,25 @@ class TestViewController: UIViewController {
         stack.push(element: operationOne)
         stack.push(element: operationTwo)
         print(stack.count)
-        // Do any additional setup after loading the view, typically from a nib.
+        print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
+        
+        let firstNode = "Azaza"
+        let secondNode = "Tormoza"
+        let thirdNode = "Oops"
+        
+        let linkedList = LinkedList<String>()
+        linkedList.append(newValue: firstNode)
+        linkedList.append(newValue: secondNode)
+        linkedList.append(newValue: thirdNode)
+        print(linkedList)
+        if let node = linkedList.nodeAt(index: 1) {
+            _ = linkedList.remove(node: node)
+            print(linkedList)
+        }
+        
+        linkedList.removeAll()
+        print(linkedList)
+        print("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
